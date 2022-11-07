@@ -1,0 +1,173 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0 0;
+  
+}
+
+p {
+  font-size: 15px;
+}
+
+
+/* vars */
+:root {
+  /* Color Scheme */
+  --primaryOrange: hsl(35, 77%, 62%);
+  --primaryRed: hsl(5, 85%, 63%);
+
+  --offWhite: hsl(36, 100%, 99%);
+  --greyBlue: hsl(233, 8%, 79%);
+  --darkGreyBlue: hsl(236, 13%, 42%);
+  --darkBlue: hsl(240, 100%, 5%);
+
+  /* font weights */
+  --light: 400;
+  --mid: 700;
+  --bold: 800;
+}
+
+/* header/upper */
+.header {
+  align-items: center;
+}
+
+.navOptions {
+  width: 30em;
+  margin-right: 1em;
+}
+
+.logo {
+  margin-left: 1em;
+}
+
+/* middle/main */
+
+.main {
+  padding: 0 1em;
+}
+
+/* left-panel (inside middle/main) */
+.banner {
+  position: relative;
+  top: -1rem;
+  justify-content: center;
+}
+
+.banner > img {
+  width: 100%;
+}
+
+.bannerText > h1 {
+  font-weight: var(--bold);
+  font-size: 2.5em;
+  max-width: 6em;
+}
+
+.leftPane {
+  margin-top: 2em;
+}
+.textPanel{
+  max-width: 25em;
+}
+
+.tP-blurb {
+  margin-bottom: 2em;
+}
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  width: 11em;
+  padding: .5em 0;
+  text-align: center;
+  background-color: var(--primaryRed);
+  color: var(--offWhite);
+}
+
+/* right panel (inside middle/main) */
+.new {
+  margin-top: 1em;
+  margin-left: 2em;
+  background-color: var(--darkBlue);
+  color: var(--greyBlue);
+  padding: 1em;
+}
+
+.new > h1 {
+  color: var(--primaryOrange);
+  margin-bottom: 1em;
+}
+
+.newArticle {
+  padding-bottom: 2em;
+  border-bottom: 10px solid green;
+  margin-bottom: 1em;
+}
+
+
+.title {
+  font-weight: var(--mid);
+  margin-bottom: .5em;
+}
+
+/* bottom */
+
+.bottom {
+  margin: 0 1em;
+  background-color: aqua;
+}
+
+.rankArticle {
+  width: 20em;
+}
+
+.rankArticle > img {
+  height: 6.5em;
+  margin: 0 1em 0 0;
+}
+
+.articleTitle {
+  margin-bottom: 1em;
+}
+
+/* bare utility */
+.flex {
+  display: flex;
+}
+
+.btwn {
+  justify-content: space-between;
+}
+
+.col {
+  flex-direction: column;
+}
+.sectionMargin {
+  margin: 2em 0;
+}
+
+.container {
+  margin: 0 1em;
+}
+
+/* idk */
+p {
+  color: var(--darkGreyBlue);
+}
+
+h3 {
+  color: var(--greyBlue);
+  margin-bottom: .25em;
+}
